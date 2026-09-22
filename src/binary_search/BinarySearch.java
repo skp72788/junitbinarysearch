@@ -2,7 +2,7 @@ package binary_search;
 
 public class BinarySearch {
 	
-	int binarySearch(int[] array, int target) {
+	static int binarySearch(int[] array, int target) {
 		
 		int min = 0;
 		int max = array.length;
@@ -20,7 +20,7 @@ public class BinarySearch {
 				max = mid - 1;
 			}
 			mid = (min + max) / 2;
-			if(min >= max) {
+			if(min > max) {
 				return -1;
 			}
 		}
