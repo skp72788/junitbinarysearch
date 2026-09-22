@@ -5,7 +5,7 @@ public class BinarySearch {
 	static int binarySearch(int[] array, int target) {
 		
 		int min = 0;
-		int max = array.length;
+		int max = array.length - 1;
 		int mid = (min + max) / 2;
 		
 		
