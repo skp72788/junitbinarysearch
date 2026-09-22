@@ -26,4 +26,11 @@ class testOfBinarySearch {
 	void testEnd() {
 		assertEquals(4, BinarySearch.binarySearch(new int[] {1,2,3,4,5}, 5));
 	}
+	
+	@Test
+	void testEmpty() {
+		assertEquals(-1, BinarySearch.binarySearch(new int[] {}, 0));
+	}
+	
+	
 }
