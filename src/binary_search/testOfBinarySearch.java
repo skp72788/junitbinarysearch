@@ -32,5 +32,8 @@ class testOfBinarySearch {
 		assertEquals(-1, BinarySearch.binarySearch(new int[] {}, 0));
 	}
 	
-	
+	@Test 
+	void testLengthOne() {
+		assertEquals(0, BinarySearch.binarySearch(new int[] {1}, 1));
+	}
 }
